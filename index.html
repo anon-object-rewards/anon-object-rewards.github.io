@@ -53,10 +53,9 @@
               Object-Oriented Rewards</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a>Anonymous Author</a></span>
-              <span class="author-block">
+                <a>Anonymous Authors</a>,</span>
+              </span>
             </div>
-
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -91,9 +90,10 @@
       <!-- Paper video. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
+        <!-- <div class="column"> -->
           <div class="publication-video">
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/main_video.m4v" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/hudor_video_anon.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -136,8 +136,6 @@
         </div>
       </div>
       <!--/ Abstract. -->
-
-
   </section>
 
 
@@ -147,8 +145,8 @@
       <div class="columns is-centered">
         <div class="column">
           <div class="content has-text-centered">
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/method_video.m4v" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/website_method.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -159,14 +157,21 @@
         <div class="column is-full-width">
           <div class="content has-text-centered">
             <p>
-              We present <b>HuDOR</b>, a technique that enables multi-fingered robot hands to learn dexterous tasks by
+              <!-- We present <b>HuDOR</b>, a technique that enables multi-fingered robot hands to learn dexterous tasks by
               leveraging object-oriented rewards derived from human videos. By tracking the motion of objects rather
               than focusing on hand morphology, HUDOR constructs reward functions that guide the robot's learning
               process through inverse reinforcement learning. The system refines an initial robot policy by comparing
               the object’s trajectory in human and robot videos, allowing the robot to adapt and perform tasks such as
               opening a box with just an hour of online training. Unlike traditional methods, HUDOR eliminates the need
               for teleoperation or extensive human demonstrations, and it generalizes well to new objects, though its
-              effectiveness decreases with significant changes in object texture or weight.
+              effectiveness decreases with significant changes in object texture or weight. -->
+
+              <b>HuDOR</b> generates rewards from human videos by tracking points on the manipulable object, 
+              indicated by the rainbow-colored dots, over the trajectory. 
+              This allows for online training of multi-fingered robot hands given only a single video of a human solving the task (left) 
+              and without robot teleoperation. To optimize the robot's policy (middle), 
+              rewards are computed by matching the point movements of the robot policy with those in the human video. 
+              In under an hour of online fine-tuning, our Allegro robot hand (right) is able to <i>open the music box</i>.
             </p>
           </div>
           <div class="content has-text-centered">
@@ -184,12 +189,11 @@
       </div>
 
       <div class="columns is-centered">
-
         <div class="column">
           <div class="content has-text-centered">
             <h3 class="title is-4">Music Box Opening</h3>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/music_box_opening.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/music_box_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -197,8 +201,8 @@
         <div class="column">
           <div class="content has-text-centered">
             <h3 class="title is-4">Paper Sliding</h3>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/paper_sliding.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/paper_sliding_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -208,16 +212,16 @@
         <div class="column">
           <div class="content has-text-centered">
             <h3 class="title is-4">Bread Picking</h3>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/bread_picking.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%"> 
+              <source src="./static/videos/bread_picking_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
         <div class="column">
-          <h3 class="title is-4">Card Sliding</h3>
           <div class="content has-text-centered">
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/card_sliding.mp4" type="video/mp4">
+            <h3 class="title is-4">Card Sliding</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/card_sliding_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -241,8 +245,8 @@
         <div class="column">
           <div class="content has-text-centered">
             <h4 class="title is-4">Dobby</h4>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/generalization_dobby.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/gen_dobby_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -250,24 +254,24 @@
         <div class="column">
           <div class="content has-text-centered">
             <h4 class="title is-4">Brown Music Box</h4>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/generalization_brown_music_box.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/gen_music_box_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
           <div class="column">
             <div class="content has-text-centered">
               <h4 class="title is-4">Medicine Bottle</h4>
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/generalization_medicine_bottle.mp4" type="video/mp4">
+              <video id="dollyzoom" controls muted loop playsinline height="100%">
+                <source src="./static/videos/gen_medicine_comp.mp4" type="video/mp4">
               </video>
             </div>
           </div>
         <div class="column">
           <div class="content has-text-centered">
             <h4 class="title is-4">Red Peg</h4>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/generalization_red_peg.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/gen_red_peg_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -279,8 +283,8 @@
         <div class="column">
           <div class="content has-text-centered">
             <h4 class="title is-4">Gum Package</h4>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/generalization_gum_package.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/gen_card_gum.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -288,24 +292,24 @@
         <div class="column">
           <div class="content has-text-centered">
             <h4 class="title is-4">Small Plate</h4>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/generalization_small_plate.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/gen_card_plate.mp4" type="video/mp4">
             </video>
           </div>
         </div>
         <div class="column">
           <div class="content has-text-centered">
             <h4 class="title is-4">Brown Tissue</h4>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/generalization_brown_tissue.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/gen_card_tissue.mp4" type="video/mp4">
             </video>
           </div>
         </div>
         <div class="column">
           <div class="content has-text-centered">
             <h4 class="title is-4">Yellow Tea Bag</h4>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/generalization_yellow_tea_bag.mp4" type="video/mp4">
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/gen_card_tea_bag.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -315,17 +319,55 @@
       <div class="columns is-centered">
          <div class="column is-full-width">
           <h2 class="title is-3">Experiment Results</h2>
+          <div class="content">
+            <p> We ran experiments to answer the following two questions: 
+            </p>
+          </div>
         </div>
       </div>
-  
+
       <div class="columns is-centered">
         <div class="column is-full-width">
           <div class="content">
             <!-- <h3 class="title is-4">Comparison Across Sensors -- Plug Insertion</h3> -->
-            <img src="./static/images/trajectories_moving.png" alt="Trajectories Moving" />
+            <img src="./static/images/online_experiments.png" alt="Online Experiments" />
+            <p>
+              We compared HuDOR to 3 different offline baselines. We ablate the input and the amount of demonstrations used to experiment on different aspects.
+              <b>HuDOR</b> improves upon all of these offline baselines, showcasing the importance of online corrections for better dexterity.
+            </p>
+          </div>
+
+          <div class="content">
+            <img src="./static/images/website_trajectories_moving.png" alt="Trajectories Moving" />
+            <p>
+              We also illustrate above, how online learning improves the policy in the Paper Sliding task. 
+              As can be seen, <b>HuDOR</b> enables the robot policy trajectory to move progressively closer to that of the human expert.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <!-- <h3 class="title is-4">Comparison Across Sensors -- Plug Insertion</h3> -->
+            <img src="./static/images/reward_experiments.png" alt="Reward Experiments" />
+
+            <p>
+              In HuDOR, we use points trajectory based reward functions to guide the online learning. 
+              We ablate over our design decision, and train online policies for three of our tasks with 
+              image representation based and points based reward functions. 
+            </p>
+            <p>
+              <b>HuDOR</b> shows improvement over both of these baselines. 
+            </p>
+
           </div>
         </div>
       </div>
+
+      
 
     </div>
   </section>
